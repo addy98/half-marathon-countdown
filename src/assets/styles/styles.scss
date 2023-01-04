@@ -1,0 +1,53 @@
+@use 'variables';
+
+.hero {
+    .hero-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 100vh;
+    }
+    .hero-bg {
+        position: absolute;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .hero-content {
+        color: white;
+        position: relative;
+        padding: 20vh;
+    }
+    .hero-copy {
+        padding: 40px;
+    }
+}
+
+.clock {
+    .clock-padding {
+        background-color: variables.$navy;
+        color: variables.$light-green;
+        padding: 30px 40px;
+        border-radius: 15px;
+        font-size: 96px;
+        width: 585px;
+        border: 4px variables.$aquamarine outset;
+    }
+}
+
+.content {
+    padding: 50px;
+}
+
+.message {
+    background-color: variables.$aquamarine;
+    border-radius: 15px;
+    padding: 15px;
+    height: 500px;
+}
+
+.footer {
+    background-color: variables.$aquamarine;
+    color: variables.$navy;
+    padding: 50px;
+}
