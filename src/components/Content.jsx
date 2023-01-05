@@ -7,7 +7,7 @@ function Content() {
             <Container fluid>
                 <Row>
                     <Col>
-                        <iframe 
+                        <iframe className="iframe-br"
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyABdwZdExGfBfO7VMP1oQMVwBNBgTy55ro&q=Prospect+Park,Brooklyn+NY&zoom=14" 
                         frameborder="0"
                         allowFullScreen
@@ -23,7 +23,14 @@ function Content() {
                         ></img>
                     </Col>
                     <Col>
-                        <Message></Message>
+                        <Row>
+                            <div className="goodluck">
+                                Send a message to Abby!
+                            </div>
+                        </Row>
+                        <Row>
+                            <Message></Message>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

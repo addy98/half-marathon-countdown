@@ -1,5 +1,6 @@
 @use 'variables';
 
+// component
 .hero {
     .hero-wrapper {
         overflow: hidden;
@@ -23,9 +24,10 @@
     }
 }
 
+// component
 .clock {
     .clock-padding {
-        background-color: variables.$navy;
+        background-color: variables.$teal;
         color: variables.$light-green;
         padding: 30px 40px;
         border-radius: 15px;
@@ -35,19 +37,47 @@
     }
 }
 
+// component
 .content {
     padding: 50px;
+    .iframe-br {
+        border-radius: 15px;
+    }
+    .goodluck {
+        color: white;
+        background-color: variables.$light-green;
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
+// component
 .message {
     background-color: variables.$aquamarine;
     border-radius: 15px;
     padding: 15px;
-    height: 500px;
 }
 
+//component
+.board {
+    height: 800px;
+    background: url('../images/vine-background.jpg');
+}
+
+// component
 .footer {
     background-color: variables.$aquamarine;
     color: variables.$navy;
     padding: 50px;
+    .link {
+        cursor: pointer;
+        color: variables.$brown;
+        &:hover {
+            color: variables.$navy;
+        }
+    }
 }
