@@ -1,3 +1,26 @@
+// BREAKPOINTS
+$breakpoints: (
+  'mobile':  ( max-width:  767px ),
+  'tablet': ( max-width:  1023px ),
+  'large-tablet':  ( max-width: 1439px ),
+  'desktop': ( max-width:  1920 )
+) !default;
+
+// (from https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/)
+@mixin breakpoint($breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+    }
+}
+
+/*
+- desktop-first design
+- size indicated in breakpoint means "this width and down"
+- ex. breakpoint(mobile) { color: red } means 
+    "on screens with a width of 767px and down, color is red"
+*/
+
+
 .flex {
     display: flex;
 }

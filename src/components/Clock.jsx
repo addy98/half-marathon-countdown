@@ -20,7 +20,7 @@ class Clock extends React.Component {
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-            // Output the result in an element with id="demo"
+            // Output the result in an element with id="countdown"
             if (seconds < 10) {
                 seconds = "0"+seconds
             }

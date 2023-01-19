@@ -1,3 +1,4 @@
+import { Container } from 'react-bootstrap'
 import Clock from './Clock'
 
 function Hero() {
@@ -10,8 +11,10 @@ function Hero() {
                     alt='prospect park background'>
                 </img>
                 <div className='hero-content'>
-                    <h1 className='hero-copy'>Abby runs the Prospect Park Half Marathon in:</h1>
-                    <Clock></Clock>
+                    <Container>
+                        <h1 className='hero-copy'>Abby runs the Prospect Park Half Marathon in:</h1>
+                        <Clock></Clock>
+                    </Container>
                 </div>
             </div>
             

@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'helpers';
 
 // component
 .hero {
@@ -6,6 +7,9 @@
         overflow: hidden;
         position: relative;
         height: 100vh;
+        @include helpers.breakpoint('mobile') {
+            height: fit-content;
+        }
     }
     .hero-bg {
         position: absolute;
@@ -18,14 +22,21 @@
         color: white;
         position: relative;
         padding: 20vh;
+        @include helpers.breakpoint('mobile') {
+            padding: 0;
+        }
     }
     .hero-copy {
         padding: 40px;
+        @include helpers.breakpoint('mobile') {
+            text-align: center;
+        }
     }
 }
 
 // component
 .clock {
+    padding-bottom: 40px;
     .clock-padding {
         background-color: variables.$teal;
         color: variables.$light-green;
@@ -34,24 +45,38 @@
         font-size: 96px;
         width: 585px;
         border: 4px variables.$aquamarine outset;
+
+        @include helpers.breakpoint('mobile') {
+            font-size: 48px;
+            width: 300px;
+            padding: 15px 20px;
+        }
     }
 }
 
 // component
 .content {
     padding: 50px;
+    @include helpers.breakpoint('mobile') {
+        padding: 20px 10px;
+    }
     .iframe-br {
         border-radius: 15px;
     }
     .goodluck {
         color: white;
-        background-color: variables.$light-green;
+        // background-color: variables.$light-green;
         border-radius: 15px;
         padding: 15px;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 700;
         text-align: center;
         margin-bottom: 15px;
+    }
+    .marathon-logo {
+        max-height: 500px;
+        width: 100%;
+        padding: 50px 0;
     }
 }
 
@@ -62,10 +87,21 @@
     padding: 15px;
 }
 
-//component
+// component
 .board {
-    height: 800px;
+    height:auto;
     background: url('../images/vine-background.jpg');
+    padding: 15px 30px;
+}
+
+// component
+.note {
+    border-radius: 15px;
+    background-color: white;
+    color: variables.$brown;
+    padding: 30px;
+    margin: 15px 0;
+    border: 4px variables.$aquamarine outset;
 }
 
 // component
