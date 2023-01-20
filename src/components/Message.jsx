@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
-import { writeNewMessage, fetchMessages } from '../utils/firebase'
+import { writeNewMessage } from '../utils/firebase'
 
 class Message extends React.Component {
 

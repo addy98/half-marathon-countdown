@@ -46,8 +46,6 @@ export function fetchMessages() {
         snapshot.forEach((childSnapshot) => {
         messages.push(childSnapshot.val())
         });
-    }, {
-        onlyOnce: true
     });
     return messages
 }
