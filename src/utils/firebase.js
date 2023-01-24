@@ -7,14 +7,14 @@ import { getDatabase, ref, child, push, update, onValue } from "firebase/databas
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyABdwZdExGfBfO7VMP1oQMVwBNBgTy55ro",
-  authDomain: "half-marathon-countdown.firebaseapp.com",
-  databaseURL: "https://half-marathon-countdown-default-rtdb.firebaseio.com",
-  projectId: "half-marathon-countdown",
-  storageBucket: "half-marathon-countdown.appspot.com",
-  messagingSenderId: "274151739337",
-  appId: "1:274151739337:web:8a0e0ae1d6f1dce487a218",
-  measurementId: "G-QEDYN49L27"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DB_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 // Initialize Firebase
@@ -50,12 +50,12 @@ export function fetchMessages() {
     return messages
 }
 
-function resolveMessages() {
-    return new Promise(resolve => {
-        resolve(fetchMessages())
-    })
-}
+// function resolveMessages() {
+//     return new Promise(resolve => {
+//         resolve(fetchMessages())
+//     })
+// }
 
-export async function readMessages() {
-    return await resolveMessages()
-}
+// export async function readMessages() {
+//     return await resolveMessages()
+// }

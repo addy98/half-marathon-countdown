@@ -17,7 +17,7 @@ function Content() {
                         ></iframe>
                     </Col>
                     <Col lg={4}>
-                        <div>
+                        <div className="flex flex-justify-center">
                             <img src="https://nycruns.com/wp-content/uploads/2022/10/NYCRUNS_logo_WEB_ProspectPark_Half_5K_over_navy.png" 
                             alt="logo"
                             className="marathon-logo"

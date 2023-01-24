@@ -9,26 +9,24 @@ function Board() {
     
     useEffect(() => {
         
-        const fetch = async () => {
-            setMessages(await readMessages())
-        }
-        fetch()
+        // const fetch = async () => {
+        //     setMessages(await readMessages())
+        // }
+        // fetch()
 
-        // setMessages(fetchMessages())
+        setMessages(fetchMessages())
     }, [])
-
-    console.log(messages[0])
     
     return (
         <div className='board'>
-                <Container>
-                    <Row>
-                        {messages.map((message, index) => (
-                            <Note key={index} note={message}></Note>
-                        ))}
-                    </Row>
-                </Container>
-            </div>
+            <Container>
+                <Row>
+                    {messages.map((message, index) => (
+                        <Note key={index} note={message}></Note>
+                    ))}
+                </Row>
+            </Container>
+        </div>
     )
 }
 
