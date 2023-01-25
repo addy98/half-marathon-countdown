@@ -22,6 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const dbRef = ref(db, 'messages');
 
+
 export function writeNewMessage(name, message) {
 
     // New message data object structure.
@@ -49,13 +50,3 @@ export function fetchMessages() {
     });
     return messages
 }
-
-// function resolveMessages() {
-//     return new Promise(resolve => {
-//         resolve(fetchMessages())
-//     })
-// }
-
-// export async function readMessages() {
-//     return await resolveMessages()
-// }

@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import Message from "./Message"
 
-function Content() {
+function Content(props) {
     return (
         <div className="content">
             <Container fluid>
@@ -31,7 +31,7 @@ function Content() {
                             </div>
                         </Row>
                         <Row>
-                            <Message></Message>
+                            <Message handleSubmit={props.handleSubmit}></Message>
                         </Row>
                     </Col>
                 </Row>
