@@ -48,5 +48,5 @@ export function fetchMessages() {
         messages.push(childSnapshot.val())
         });
     });
-    return messages
+    return messages.reverse()
 }
