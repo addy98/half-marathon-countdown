@@ -30,6 +30,7 @@
         padding: 40px;
         @include helpers.breakpoint('mobile') {
             text-align: center;
+            padding: 30px;
         }
     }
 }

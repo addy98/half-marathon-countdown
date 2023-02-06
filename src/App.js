@@ -6,12 +6,12 @@ import { fetchMessages, writeNewMessage } from './utils/firebase'
 import { useState, useEffect } from 'react'
 
 function App() {
-
+  
   const [messages, setMessages] = useState([])
 
   useEffect(() => {
     setMessages(fetchMessages())
-  }, [])
+  })
 
   function handleSubmit(e) {
     e.preventDefault()
