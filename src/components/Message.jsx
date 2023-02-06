@@ -8,12 +8,12 @@ function Message(props) {
             <Form id="messageForm" onSubmit={props.handleSubmit}>
                 <Form.Group className="mb-3" controlId="name">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control placeholder="Your name" />
+                    <Form.Control required placeholder="Your name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="message">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" placeholder="Your message to Abby!" />
+                    <Form.Control required as="textarea" placeholder="Your message to Abby!" />
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
